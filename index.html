@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="shortcut icon" href="/favicon_io/nficon2016.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- ---------------header-slider-------------- -->
+    <div class="header">
+        <nav>
+            <a href="https://netflix-ddh.web.app/"><img class="logo" src="./assets/IMG/NETFLIX.png" alt=""></a>
+           
+            <div>
+                <div class="language-btn">
+                    <div class="global">
+                        <img style="width: 100%;" src="./assets/IMG/global-fff.png" alt="">
+                    </div>
+                    <div class="dow-arrow">
+                        <img style="width: 100%;" src="./assets/IMG/downward-arrow (1).png" alt="">
+                    </div>                    
+                    <select>
+                        <option value="">Tiếng Việt</option>
+                        <option value="">English</option>
+                    </select>
+                    
+                </div>
+                <button onclick="myFunction()">Đăng Nhập</button>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>Chương trình truyền hình, phim không giới hạn và nhiều nội dung khác.</h1>
+            <h3>Xem ở mọi nơi. Hủy bất kỳ lúc nào.</h3>
+            <p>Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách thành viên của bạn.</p>
+            <div class="form-btn">
+                <form>
+                    <div class="input-email">
+                        <input type="email">
+                        <span>Địa chỉ email</span>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit">Bắt đầu </button>
+                        <div class="arrow-right">
+                            <img src="./assets/IMG/next.png" alt=""> 
+                        </div>
+                    </div>
+                </form>                
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------features------------- -->
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2>Thưởng thức trên TV của bạn.</h2>
+                <p>Xem trên TV thông minh, Playstation, Xbox, Chromecast, Apple TV, đầu phát Blu-ray và nhiều thiết bị khác.</p>
+            </div>
+            <div class="img-col">
+                <!-- <img src="/public/assets/IMG/feature-1.png" alt=""> -->
+                <img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="nmhp-card-animation-asset-image" class="default-ltr-cache-1d3w5wq">
+                <video data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop="" data-video="0"><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"></video>
+            </div>       
+        </div>
+
+        <div class="row">
+            <div class="img-col">
+                <img src="./assets/IMG/feature-2.jpg" alt="">
+                <div class="three-elm-bottom-img-col">
+                    <div class="img-first">
+                        <img src="./assets/IMG/boxshot.png" alt="">
+                    </div>
+                    <div class="text-second">
+                        <h3>Cậu bé mất tích</h3>
+                        <p>Đang tải xuống...</p>
+                    </div>
+                    <video data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop="" data-video="0"><source src="./assets/IMG/ezgif-4-2f4f9d6a76.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+            
+            <div class="text-col">
+                <h2>Tải xuống nội dung để xem ngoại tuyến.</h2>
+                <p>Lưu lại những nội dung yêu thích một cách dễ dàng và luôn có thứ để xem.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="text-col">
+                <h2>Xem ở mọi nơi.</h2>
+                <p>Phát trực tuyến không giới hạn phim và chương trình truyền hình trên điện thoại, máy tính bảng, máy tính xách tay và TV.</p>
+            </div>
+            <div class="img-col">
+                <img src="./assets/IMG/feature-3.png" alt="">               
+                <video class="video-row3" data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop="" data-video="1"><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-vn.m4v" type="video/mp4"></video>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="img-col">
+                <img src="./assets/IMG/feature-4.png" alt="">               
+            </div>
+            <div class="text-col">
+                <h2>Tạo hồ sơ cho trẻ em.</h2>
+                <p>Đưa các em vào những cuộc phiêu lưu với nhân vật được yêu thích trong một không gian riêng. 
+                    Tính năng này đi kèm miễn phí với tư cách thành viên của bạn.</p>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------Question--------------- -->
+    <div class="faq">
+        <h2>Câu hỏi thường gặp</h2>
+        <div class="li-question">
+            <!--netflix la gi?-->
+            <div class="question">
+                <input type="checkbox" id="q1">
+                <label class="heading" for="q1">
+                    <p>Netflix là gì?</p> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>                      
+                </label>
+                <div class="answer">
+                    <p style="margin-bottom: 10px;">
+                        Netflix là dịch vụ phát trực tuyến mang đến đa dạng các loại chương trình truyền hình, phim, anime, 
+                        phim tài liệu đoạt giải thưởng và nhiều nội dung khác trên hàng nghìn thiết bị có kết nối Internet.                      
+                        <br>
+                        <br>
+                        Bạn có thể xem bao nhiêu tùy thích, bất cứ lúc nào bạn muốn mà không gặp phải một quảng cáo nào - tất cả chỉ với một mức giá thấp hàng tháng. 
+                        Luôn có những nội dung mới để bạn khám phá và những chương trình truyền hình, phim mới được bổ sung mỗi tuần!  
+                    </p>
+                </div>
+            </div>
+            <div class="question">
+                <input type="checkbox" id="q2">
+                <label class="heading" for="q2">
+                    <p>Tôi phải trả bao nhiêu tiền để xem Netflix?</p> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>                      
+                </label>
+                <div class="answer">
+                    <p>
+                        Xem Netflix trên điện thoại thông minh, máy tính bảng, TV thông minh, máy tính xách tay hoặc thiết bị phát trực tuyến, chỉ với một khoản phí cố định hàng tháng. Các gói dịch vụ với mức giá từ 70.000 ₫ đến 260.000 ₫ mỗi tháng. Không phụ phí, không hợp đồng.
+                    </p>
+                </div>
+            </div>            
+            
+            <div class="question">
+                <input type="checkbox" id="q3">
+                <label class="heading" for="q3">
+                    <p>Tôi có thể xem ở đâu?</p> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>                      
+                </label>
+                <div class="answer">
+                    <p style="margin-bottom: 10px;">
+                        Xem mọi lúc, mọi nơi. Đăng nhập bằng tài khoản Netflix của bạn để xem ngay trên trang web netflix.com từ máy tính cá nhân, hoặc trên bất kỳ thiết bị nào có kết nối Internet và có cài đặt ứng dụng Netflix, bao gồm TV thông minh, điện thoại thông minh, máy tính bảng, thiết bị phát đa phương tiện trực tuyến và máy chơi game.
+                        <br>
+                        <br>
+                        Bạn cũng có thể tải xuống các chương trình yêu thích bằng ứng dụng trên iOS, Android hoặc Windows 10. Vào phần nội dung đã tải xuống để xem trong khi di chuyển và khi không có kết nối Internet. Mang Netflix theo bạn đến mọi nơi.
+                    </p>
+                </div>
+            </div>            
+            
+            <div class="question">
+                <input type="checkbox" id="q4">
+                <label class="heading" for="q4">
+                    <p>Làm thế nào để hủy?</p> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>                      
+                </label>
+                <div class="answer">
+                    <p>
+                        Netflix rất linh hoạt. Không có hợp đồng phiền toái, không ràng buộc. Bạn có thể dễ dàng hủy tài khoản trực tuyến chỉ trong hai cú nhấp chuột. Không mất phí hủy – bạn có thể bắt đầu hoặc ngừng tài khoản bất cứ lúc nào.
+                    </p>
+
+                </div>
+            </div>            
+            
+            <div class="question">
+                <input type="checkbox" id="q5">
+                <label class="heading" for="q5">
+                    <p>Tôi có thể xem gì trên Netflix?</p> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>                      
+                </label>
+                <div class="answer">
+                    <p>
+                        Netflix có một thư viện phong phú gồm các phim truyện, phim tài liệu, chương trình truyền hình, anime, tác phẩm giành giải thưởng của Netflix và nhiều nội dung khác. Xem không giới hạn bất cứ lúc nào bạn muốn.
+                    </p>
+                </div>
+            </div>            
+            
+            <div class="question">
+                <input type="checkbox" id="q6">
+                <label class="heading" for="q6">
+                    <p>Netflix có phù hợp cho trẻ em không?</p> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>                      
+                </label>
+                <div class="answer">
+                    <p style="margin-bottom: 10px;">
+                        Trải nghiệm Netflix Trẻ em có sẵn trong gói dịch vụ của bạn, trao cho phụ huynh quyền kiểm soát trong khi các em có thể thưởng thức các bộ phim và chương trình phù hợp cho gia đình tại không gian riêng.
+                        <br>
+                        <br>
+                        Hồ sơ Trẻ em đi kèm tính năng kiểm soát của cha mẹ (được bảo vệ bằng mã PIN), cho phép bạn giới hạn độ tuổi cho nội dung con mình được phép xem, cũng như chặn những phim hoặc chương trình mà bạn không muốn các em nhìn thấy.
+                    </p>
+                </div>
+            </div>
+        </div class="li-question">
+        <p class="sub-heading-p">Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách thành viên của bạn.</p>
+        <div class="form-btn">
+            <form>
+                <div class="input-email">
+                    <input type="email">
+                    <span>Địa chỉ email</span>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit">Bắt đầu </button>
+                    <div class="arrow-right">
+                        <img src="./assets/IMG/next.png" alt=""> 
+                    </div>
+                </div>
+            </form>                
+        </div>
+    </div>
+
+
+<!-- ---------------footer-------------- -->
+    <div class="footer">
+        <h2>Bạn có câu hỏi? Liên hệ với chúng tôi.</h2>
+
+        <div class="row">
+            <div class="col">
+                <a href="#">Câu hỏi thường gặp</a>
+                <a href="#">Trung tâm đa phương tiện</a>
+                <a href="#">Các cách xem</a>
+                <a href="#">Tùy chọn cookie</a>
+                <a href="#">Kiểm tra tốc độ</a>
+            </div>
+            <div class="col">
+                <a href="#">Trung tâm trợ giúp</a>
+                <a href="#">Quan hệ với nhà đầu tư</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Thông tin doanh nghiệp</a>
+                <a href="#">Thông báo pháp lý</a>
+            </div>
+            <div class="col">
+                <a href="#">Tài khoản</a>
+                <a href="#">Việc làm</a>
+                <a href="#">Quyền riêng tư</a>
+                <a href="#">Liên hệ với chúng tôi</a>
+                <a href="#">Chỉ có trên netflix</a>
+            </div>
+        </div>
+        <div class="language-btn">
+            <div class="global">
+                <img style="width: 100%;" src="./assets/IMG/global-fff.png" alt="">
+            </div>
+            <div class="dow-arrow">
+                <img style="width: 100%;" src="./assets/IMG/downward-arrow (1).png" alt="">
+            </div>                    
+            <select>
+                <option value="">Tiếng Việt</option>
+                <option value="">English</option>
+            </select>
+        </div>
+        <p class="copyright-txt">Netflix Việt Nam</p>
+    </div>
+
+</body>
+<script>
+    function myFunction(){
+        location.replace("https://login-ddh.web.app/")
+    }
+</script>
+</html>
