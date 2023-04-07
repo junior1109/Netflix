@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+}
+.batdau {
+    font-family: Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    background-image: url(figma/bgr.png);
+    height: 1023px;
+    width: 100%;
+}
+
+.header {
+
+   border-bottom: 5px solid #d9d9d9;
+   
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+}
+
+.netflix_icon {
+    display: flex;
+    width: 225px;
+    height: 120px;
+    cursor: pointer;
+}
+.header .netflix_icon img {
+    width: 85%;
+    margin-top: -16px;
+}
+.DN {
+   margin: 0 3%;
+   list-style: none;
+}
+.header button:hover {
+    background-color: #B80D16;
+}
+.header button {
+    background-color: #E50914;
+    height: 55px;
+    width: 180px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 46px;
+    border: none;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    cursor: pointer;
+    margin-top: 23px;
+ 
+ }
+ 
+.footer {
+    display: block;
+    
+}
+
+.nav1 {
+    margin: 0 auto;
+    max-width: 450px;
+    text-align: center;
+    margin-top: -60px;
+}
+.icons {
+    margin: 100px 0 20px;
+    text-align: center;
+    display: block;
+}
+.content {
+    color: #fff;
+   text-align: center;
+  
+}
+h1 {
+    font-size: 15px;
+    font-weight: 100;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 400;
+    max-width: 450px;
+    margin-top: 10px;
+}
+.footer nav2 button {
+    background-color: rgb(234, 234, 234, 0.2);
+    width: 380px;
+    height: 65px;
+    border: none;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 90px 10px 10px 90px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    margin: 15px 0;
+    display: flex;
+    text-align: center;
+    margin-left: 47px;
+    
+
+}
+.nav2 {
+    max-width: 450px;
+}
+.footer button img {
+    margin-left: 31px;
+    line-height: 30px;
+    margin-top: 18px;
+}
+p1 {
+    margin-left: 4px;
+    margin-top: 17px;
+}
+p2 {
+    margin-left: 20px;
+    margin-top: 23px;
+}
+p3 {
+    margin-left: 9px;
+    margin-top: 15px;
+}
+.footer a button:hover {
+    background-color: #B80D16;
+}
+.footer a button {
+    background-color: #E50914;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 34px;
+    width: 390px;
+    height: 65px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    letter-spacing: 0!important;
+    border-radius: 10px;
+    color: #fff;
+    list-style: none;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 45px;
+}
+.footer1 {
+    margin: 0 auto;
+    width: 100%;
+    height: 222px;
+    padding-bottom: 42px;
+    margin-top: 56px;
+    padding-top: 12px;
+    opacity: 1;
+    border-top: 1px solid #d9d9d9;
+    background: #f3f3f396;
+
+
+}
+.footer1 h2 {
+    font-size: 18px;
+    margin-left: 170px;
+    font-weight: 600;
+    margin-top: 26px
+    
+}
+.row{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    line-height: 40px;
+    margin-top: 45px;
+    margin-left: 170px;
+    
+}
+.row a {
+    color: #000000d4;
+    list-style: none;
+    font-weight: 450;
+    text-decoration: none;
+}
+.global{
+    position: absolute;
+    margin-top: 36px;
+    margin-left: 190px;
+}
+
+select{
+    background: #fff;
+    height: 55px;
+    width: 170px;
+    color: #000000d4;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-left: 46px;
+    border-radius: 4px;
+    margin-left: 170px;
+    margin-top: 20px;
+}
